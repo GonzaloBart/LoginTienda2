@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 Oct 2021, 21:43:35 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="Usuarios" table="usuarios" catalog="tienda_online" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idRol" type="java.lang.Integer">
+            <column name="id_rol" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="clave" type="string">
+            <column name="clave" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+        <property name="apellido1" type="string">
+            <column name="apellido1" />
+        </property>
+        <property name="apellido2" type="string">
+            <column name="apellido2" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" />
+        </property>
+        <property name="localidad" type="string">
+            <column name="localidad" />
+        </property>
+        <property name="provincia" type="string">
+            <column name="provincia" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" />
+        </property>
+        <property name="dni" type="string">
+            <column name="dni" />
+        </property>
+    </class>
+</hibernate-mapping>
